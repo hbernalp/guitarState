@@ -1,4 +1,4 @@
-function Header() {
+function Header(cart) {
 
     
   return (
@@ -35,7 +35,11 @@ function Header() {
                         <th></th>
                       </tr>
                     </thead>
+
                     <tbody>
+                      {cart.map(guitar => (
+                        
+                      ))}
                       <tr>
                         <td>
                           <img

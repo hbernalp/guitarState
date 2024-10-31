@@ -1,15 +1,10 @@
 
 
-export default function Main({guitar}) {
+export default function Main({ guitar, addToCart }) {
 
   const {id, name, image, description, price } = guitar
 
-  const handleClick = (id) => {
-
-    console.log("Diste clic", id)
-    
-  }
-  
+   
     
   return (
     <>
@@ -27,7 +22,7 @@ export default function Main({guitar}) {
           <p className="fw-black text-primary fs-3">${price}</p>
           <button type="button" 
                   className="btn btn-dark w-100 "
-                  onClick={ () => handleClick(guitar) }>Agregar al Carrito</button>
+                  onClick={ () => addToCart(guitar) }>Agregar al Carrito</button>
         </div>
       </div>
     </>
